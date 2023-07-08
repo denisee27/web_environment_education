@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <style>
+    .content:hover{
+      box-shadow: 5px 5px 5px 0px; 
+    }
+    @media screen and (min-width: 300px) {
+      .materi{
+        display:block;
+      }
+    }
+    
+    @media screen and (min-width: 1000px) {
+      .materi{
+        display:flex;
+      }
+      footer{
+        position: absolute;
+        bottom: 0;
+      }
+
+    }
+  </style>
+  <title>Profile</title>
+</head>
+<body style="background-color:whitesmoke">
+  <div style="position:absolute">
+    <a href="index.html"><button class="btn"> <img style="width:7vh ;" src="assets/back.png"></button></a>
+  </div><br>
+  <div class="text-center m-auto mt-5 container" style="background-color: #284a6e; color: #f1f6f9 ;border-radius: 15px;">
+    <h1 class="p-2">MATERI</h1>
+  </div>
+  <div class="materi container" style="justify-content: center; line-height: 100px;justify-content: space-around">
+    <div class="my-5 content" style="background-color: #9ba4b4; border-radius:15px;max-width: 60vh; max-height: 60vh;">
+      <a href="content/materi/materi-1/materi-1.html" style="text-decoration:none;color: #284a6e">
+        <div class="text-center mt-4">
+          <img src="assets/Materi/Menganalisa kebahasaan/asset1/1.png" style="width:25vh">
+        </div>
+          <h5 class="text-center mx-3 mt-1">Menganalisis Kebahasaan dan Menulis Artikel Opini Bahasa Indonesia</h5>
+      </a>
+    </div>
+  
+    <div class="my-5 content" style="background-color: #9ba4b4; border-radius:15px;max-width: 60vh; max-height: 60vh;">
+      <a href="content/materi/materi-2/materi-2.html" style="text-decoration:none;color: #284a6e">
+        <div class="text-center mt-4">
+        <img src="assets/Materi/Informasi Dalam Sebuah Artikel/asset1/1.png" style="width:25vh">
+      </div>
+        <h5 class="text-center mx-3 mt-1">Informasi Dalam Sebuah Artikel Opini Bahasa Indonesia</h5>
+      </a>
+    </div>
+  </div>
+
+  <footer style="background-color: #284a6e;color: #f1f6f9;width: 100%">
+    <div style="padding:40px ;">
+    <h6 class="text-center">Copyright @ 2022</h5>
+    </div>
+  </footer>
+</body>
+</html>

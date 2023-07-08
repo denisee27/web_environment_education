@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+/>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <title>Home</title>
+  <style>
+    @media screen and (min-width: 300px) {
+      .fitur{
+        display:block;
+      }
+    }
+    
+    @media screen and (min-width: 1000px) {
+      .fitur{
+        display:flex;
+        width: 60%;
+      }
+    }
+    li:hover{
+      border-bottom:4px solid whitesmoke ;
+    }
+    a:hover{
+      border-bottom: red ;
+    }
+    li {
+        list-style: none;
+        margin: 20px 0 20px 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        margin-left: -300px;
+        transition: 0.4s;
+    }
+
+    .active-main-content {
+      
+        margin-left: 250px;
+    }
+
+    .active-sidebar {
+        margin-left: 0;
+    }
+
+    #main-content {
+        transition: 0.4s;
+    }
+      </style>
+</head>
+<body style="font-family: 'Lato', sans-serif; background-color: whitesmoke;">
+  <div class="sidebar p-4" style="background-color:#284A6E;" id="sidebar">
+    <h4 class="mb-5 text-white">KAIDAH LINGKUNGAN</h4>
+    <li>
+      <a class="text-white" href="index.html">
+        <i class="bi bi-house mr-5"></i>
+        Home
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="petunjuk.html">
+        <i class="bi bi-info-circle-fill mr-2"></i>
+        Petunjuk
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="materi.html">
+        <i class="bi bi-journal-bookmark mr-2"></i>
+        Materi
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="artikel.html">
+        <i class="bi bi-file-earmark-text mr-2"></i>
+        Contoh Teks Artikel
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="video.html">
+        <i class="bi bi-film mr-2"></i>
+        Video Animasi
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="evaluasi.php">
+        <i class="bi bi-file-check mr-2"></i>
+        Latihan Soal
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="referensi.html">
+        <i class="bi bi-link-45deg mr-2"></i>
+        Referensi Materi
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="penilaian.php">
+        <i class="bi bi-bookmark-star mr-2"></i>
+        Penilaian
+      </a>
+    </li>
+    <li>
+      <a class="text-white" href="profile.html">
+        <i class="bi bi-person-lines-fill mr-2"></i>
+        Profile Pengajar
+      </a>
+    </li>
+  </div>
+</div>
+<div  id="main-content">
+  <button class="btn btn-light" style=" float: left;" id="button-toggle">
+    <i class="bi bi-list"></i>
+  </button>
+  <div class="text-center" style="height:25vh; background-color: #284a6e; color: #f1f6f9">
+    <div class="container"> <br><br>
+      <h1>Ayo Pelajari Lingkungan</h1>
+    </div>
+  </div>
+  <div class="m-auto text-center fitur" style="align-content: center;justify-content: space-evenly;flex-wrap: wrap ;line-height: 100px">
+    <div class="my-5 mx-auto text-center" style="background-color: #9ba4b4; border-radius:15px;width: max-content;">
+      <a href="petunjuk.html" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/nrxxmbbt.json"
+        trigger="hover"
+        style="width:200px;height:180px">
+        </lord-icon>
+        <h2 class="text-center" >Petunjuk</h2>
+      </a>
+    </div>
+    <div class="my-5 mx-auto" style="background-color: #9ba4b4; border-radius:15px;width: max-content;">
+      <a href="materi.html" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/dxoycpzg.json"
+        trigger="morph"
+        style="width:200px;height:180px">
+        </lord-icon>
+        <h2 class="text-center" >Materi</h2>
+      </a>
+    </div>
+    <div class="my-5 mx-auto" style="background-color: #9ba4b4; border-radius:15px;width: max-content;">
+      <a href="artikel.html" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/ckatldkn.json"
+        trigger="hover"
+        style="width:200px;height:180px">
+        </lord-icon>
+        <h2 class="text-center" >Artikel</h2>
+      </a>
+    </div>
+    <div class="my-5 mx-auto" style="background-color: #9ba4b4; border-radius:15px;width: max-content;">
+      <a href="video.html" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/ytdpzbrl.json"
+        trigger="hover"
+        style="width:200px;height:180px">
+    </lord-icon>
+        <h2 class="text-center" >Video</h2>
+      </a>
+    </div>
+    <div class="my-5 mx-auto" style="background-color: #9ba4b4; border-radius:15px;width: max-content;">
+      <a href="evaluasi.php" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/rfbqeber.json"
+        trigger="hover"
+        style="width:200px;height:180px">
+        </lord-icon>
+        <h2 class="text-center" >Evaluasi</h2>
+      </a>
+    </div>
+    <div class="my-5 mx-auto" style="background-color: #9ba4b4; border-radius:15px;width: max-content;">
+      <a href="profile.html" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/svkiyocx.json"
+        trigger="hover"
+        style="width:200px;height:180px">
+        </lord-icon>
+        <h2 class="text-center" >Profile</h2>
+      </a>
+    </div>
+    <div class="my-5 mx-auto" style="background-color: #9ba4b4;padding-bottom: 20px; border-radius:15px;width: max-content;">
+      <a href="referensi.html" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/shiwicyv.json"
+        trigger="morph"
+        style="width:200px;height:180px">
+        </lord-icon>
+        <h2 class="text-center" >Referensi</h2>
+      </a>
+    </div>
+    <div class="my-5 mx-auto" style="background-color: #9ba4b4;padding-bottom: 20px; border-radius:15px;width: max-content;">
+      <a href="penilaian.php" style="text-decoration:none;color: #284a6e">
+        <lord-icon
+        src="https://cdn.lordicon.com/alzqexpi.json"
+        trigger="hover"
+        style="width:200px;height:180px">
+        </lord-icon>
+        <h2 class="text-center" >Penilaian</h2>
+      </a>
+    </div>
+
+  </div>
+  <footer style="background-color: #284a6e;color: #f1f6f9;width: 100%">
+    <div style="padding:40px ;">
+      <h6 class="text-center">Copyright @ 2022</h5>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // event will be executed when the toggle-button is clicked
+    document.getElementById("button-toggle").addEventListener("click", () => {
+
+        // when the button-toggle is clicked, it will add/remove the active-sidebar class
+        document.getElementById("sidebar").classList.toggle("active-sidebar");
+
+        // when the button-toggle is clicked, it will add/remove the active-main-content class
+        document.getElementById("main-content").classList.toggle("active-main-content");
+    });
+</script>
+</body>
+</html>
